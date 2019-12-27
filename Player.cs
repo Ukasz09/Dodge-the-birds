@@ -13,6 +13,8 @@ public delegate void Hit();
 	public override void _Ready() {
         _screenSize = GetViewport().GetSize();
 		Hide();
+		GetNode<AnimatedSprite>("AnimatedSprite").Play();
+		
 	}
 	
 	public override void _Process(float delta)
@@ -47,7 +49,7 @@ public delegate void Hit();
      
     }
 	
-	   animatedSprite.Play();
+	  // animatedSprite.Play();
 	
 	
 	Position += velocity * delta;

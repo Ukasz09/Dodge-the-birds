@@ -6,6 +6,12 @@ public class HUD : CanvasLayer
     [Signal]
     public delegate void StartGame();
 
+ public override void _Ready()
+    {
+		GetNode<Button>("EndButton").Hide();
+    }
+
+
 public void ShowMessage(string text)
 {
     var messageLabel = GetNode<Label>("MessageLabel");
@@ -27,6 +33,7 @@ async public void ShowGameOver()
     messageLabel.Show();
 
     GetNode<Button>("StartButton").Show();
+	GetNode<Button>("EndButton").Show();
 }
 
 public void UpdateScore(int score)
@@ -37,6 +44,7 @@ public void UpdateScore(int score)
 public void OnStartButtonPressed()
 {
     GetNode<Button>("StartButton").Hide();
+	GetNode<Button>("EndButton").Hide();
     EmitSignal("StartGame");
 }
 
@@ -45,4 +53,8 @@ public void OnMessageTimerTimeout()
     GetNode<Label>("MessageLabel").Hide();
 }
 
+private void OnEndButtonPressed()
+{
+    GetTree().Quit();
+}
 }

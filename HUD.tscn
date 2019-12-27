@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://HUD.cs" type="Script" id=1]
 [ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
@@ -20,6 +20,12 @@ action = "ui_select"
 
 [sub_resource type="ShortCut" id=5]
 shortcut = SubResource( 4 )
+
+[sub_resource type="InputEventAction" id=6]
+action = "ui_cancel"
+
+[sub_resource type="ShortCut" id=7]
+shortcut = SubResource( 6 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -43,6 +49,22 @@ align = 1
 
 [node name="StartButton" type="Button" parent="."]
 anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -130.5
+margin_top = 600.0
+margin_right = 130.5
+margin_bottom = -200.0
+custom_fonts/font = SubResource( 3 )
+shortcut = SubResource( 5 )
+text = "START"
+
+[node name="MessageTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="EndButton" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
@@ -51,11 +73,8 @@ margin_top = -200.0
 margin_right = 130.5
 margin_bottom = -100.0
 custom_fonts/font = SubResource( 3 )
-shortcut = SubResource( 5 )
-text = "START"
-
-[node name="MessageTimer" type="Timer" parent="."]
-wait_time = 2.0
-one_shot = true
+shortcut = SubResource( 7 )
+text = "QUIT"
 [connection signal="pressed" from="StartButton" to="." method="OnStartButtonPressed"]
 [connection signal="timeout" from="MessageTimer" to="." method="OnMessageTimerTimeout"]
+[connection signal="pressed" from="EndButton" to="." method="OnEndButtonPressed"]

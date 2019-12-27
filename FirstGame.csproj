@@ -49,9 +49,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigMob.cs" />
     <Compile Include="HUD.cs" />
+    <Compile Include="LittleMob.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Mob.cs" />
     <Compile Include="MobTimer.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
