@@ -1,0 +1,159 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://scripts/scene/Hud.cs" type="Script" id=1]
+[ext_resource path="res://arts/items/coins/Gold_21.png" type="Texture" id=2]
+[ext_resource path="res://arts/items/coins/Gold_22.png" type="Texture" id=3]
+[ext_resource path="res://arts/items/coins/Gold_23.png" type="Texture" id=4]
+[ext_resource path="res://arts/items/coins/Gold_24.png" type="Texture" id=5]
+[ext_resource path="res://arts/items/coins/Gold_25.png" type="Texture" id=6]
+[ext_resource path="res://arts/items/coins/Gold_26.png" type="Texture" id=7]
+[ext_resource path="res://arts/items/coins/Gold_27.png" type="Texture" id=8]
+[ext_resource path="res://arts/items/coins/Gold_28.png" type="Texture" id=9]
+[ext_resource path="res://arts/items/coins/Gold_29.png" type="Texture" id=10]
+[ext_resource path="res://arts/items/coins/Gold_30.png" type="Texture" id=11]
+[ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=12]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+outline_size = 4
+outline_color = Color( 0.160784, 0.141176, 0.141176, 1 )
+font_data = ExtResource( 12 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.964706, 0.733333, 0.0392157, 1 )
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 10
+border_color = Color( 0.160784, 0.141176, 0.141176, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.74902, 0.541176, 0.0392157, 1 )
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.160784, 0.141176, 0.141176, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.494118, 0.772549, 0.0470588, 1 )
+border_width_left = 2
+border_width_right = 2
+border_width_bottom = 10
+border_color = Color( 0.160784, 0.141176, 0.141176, 1 )
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="DynamicFont" id=6]
+size = 45
+font_data = ExtResource( 12 )
+
+[sub_resource type="InputEventAction" id=7]
+action = "ui_select"
+
+[sub_resource type="ShortCut" id=8]
+shortcut = SubResource( 7 )
+
+[sub_resource type="InputEventAction" id=9]
+action = "ui_cancel"
+
+[sub_resource type="ShortCut" id=10]
+shortcut = SubResource( 9 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 64
+outline_size = 5
+outline_color = Color( 0.160784, 0.141176, 0.141176, 1 )
+font_data = ExtResource( 12 )
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="CoinSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 880.857, 51.3909 )
+scale = Vector2( 0.12, 0.12 )
+frames = SubResource( 1 )
+
+[node name="MessageLabel" type="Label" parent="."]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -39.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.94902, 0.94902, 0.94902, 1 )
+align = 1
+
+[node name="StartButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -238.76
+margin_top = 100.359
+margin_right = 241.24
+margin_bottom = 220.359
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0.219608, 0.219608, 0.219608, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+shortcut = SubResource( 8 )
+text = "START"
+
+[node name="EndButton" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -238.76
+margin_top = 220.359
+margin_right = 241.24
+margin_bottom = 340.359
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0.219608, 0.219608, 0.219608, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+shortcut = SubResource( 10 )
+text = "QUIT"
+
+[node name="MessageTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -112.0
+margin_top = 3.8147e-006
+margin_right = 72.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 11 )
+custom_colors/font_color = Color( 0.94902, 0.94902, 0.94902, 1 )
+text = "0"
+align = 1
+valign = 1
+[connection signal="pressed" from="StartButton" to="." method="OnStartButtonPressed"]
+[connection signal="pressed" from="EndButton" to="." method="OnEndButtonPressed"]
+[connection signal="timeout" from="MessageTimer" to="." method="OnMessageTimerTimeout"]

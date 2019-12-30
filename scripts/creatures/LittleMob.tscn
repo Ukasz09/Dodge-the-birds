@@ -1,0 +1,90 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://scripts/creatures/LittleMob.cs" type="Script" id=1]
+[ext_resource path="res://arts/sprites/brown-1.png" type="Texture" id=2]
+[ext_resource path="res://arts/sprites/brown-2.png" type="Texture" id=3]
+[ext_resource path="res://arts/sprites/brown-3.png" type="Texture" id=4]
+[ext_resource path="res://arts/sprites/brown-4.png" type="Texture" id=5]
+[ext_resource path="res://arts/sprites/greenHat-1.png" type="Texture" id=6]
+[ext_resource path="res://arts/sprites/greenHat-2.png" type="Texture" id=7]
+[ext_resource path="res://arts/sprites/pink-1.png" type="Texture" id=8]
+[ext_resource path="res://arts/sprites/pink-2.png" type="Texture" id=9]
+[ext_resource path="res://arts/sprites/yeallow-1.png" type="Texture" id=10]
+[ext_resource path="res://arts/sprites/yeallow-2.png" type="Texture" id=11]
+[ext_resource path="res://arts/sprites/grey-1.png" type="Texture" id=12]
+[ext_resource path="res://arts/sprites/grey-2.png" type="Texture" id=13]
+[ext_resource path="res://arts/sprites/dragon-1.png" type="Texture" id=14]
+[ext_resource path="res://arts/sprites/dragon-2.png" type="Texture" id=15]
+[ext_resource path="res://arts/sprites/dragon-3.png" type="Texture" id=16]
+[ext_resource path="res://arts/sprites/dragon-4.png" type="Texture" id=17]
+[ext_resource path="res://arts/sprites/duck-1.png" type="Texture" id=18]
+[ext_resource path="res://arts/sprites/duck-2.png" type="Texture" id=19]
+[ext_resource path="res://arts/sprites/duck-3.png" type="Texture" id=20]
+[ext_resource path="res://arts/sprites/duck-4.png" type="Texture" id=21]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "brown",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "green",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "pink",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "yellow",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "grey",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "dragon",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "duck",
+"speed": 15.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 40.1922
+height = 11.8567
+
+[node name="LittleMob" type="RigidBody2D"]
+position = Vector2( -19.507, 34.6249 )
+gravity_scale = 2.0
+script = ExtResource( 1 )
+MinSpeed = 500
+MaxSpeed = 900
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -0.0246506, 2.1945 )
+scale = Vector2( 0.14, 0.14 )
+frames = SubResource( 1 )
+animation = "dragon"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 6.36395, -2.8284 )
+rotation = 1.5708
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Visibility" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 10.7363, 0.825867 )
+[connection signal="screen_exited" from="Visibility" to="." method="OnVisibilityScreenExited"]

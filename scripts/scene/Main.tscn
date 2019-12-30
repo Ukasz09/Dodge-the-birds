@@ -1,0 +1,138 @@
+[gd_scene load_steps=62 format=2]
+
+[ext_resource path="res://scripts/scene/Main.cs" type="Script" id=1]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-1.jpg" type="Texture" id=2]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-2.jpg" type="Texture" id=3]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-3.jpg" type="Texture" id=4]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-4.jpg" type="Texture" id=5]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-5.jpg" type="Texture" id=6]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-6.jpg" type="Texture" id=7]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-7.jpg" type="Texture" id=8]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-8.jpg" type="Texture" id=9]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-9.jpg" type="Texture" id=10]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-10.jpg" type="Texture" id=11]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-11.jpg" type="Texture" id=12]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-12.jpg" type="Texture" id=13]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-13.jpg" type="Texture" id=14]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-14.jpg" type="Texture" id=15]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-15.jpg" type="Texture" id=16]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-16.jpg" type="Texture" id=17]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-17.jpg" type="Texture" id=18]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-18.jpg" type="Texture" id=19]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-19.jpg" type="Texture" id=20]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-20.jpg" type="Texture" id=21]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-21.jpg" type="Texture" id=22]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-22.jpg" type="Texture" id=23]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-23.jpg" type="Texture" id=24]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-24.jpg" type="Texture" id=25]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-25.jpg" type="Texture" id=26]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-26.jpg" type="Texture" id=27]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-27.jpg" type="Texture" id=28]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-28.jpg" type="Texture" id=29]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-29.jpg" type="Texture" id=30]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-30.jpg" type="Texture" id=31]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-31.jpg" type="Texture" id=32]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-32.jpg" type="Texture" id=33]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-33.jpg" type="Texture" id=34]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-34.jpg" type="Texture" id=35]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-35.jpg" type="Texture" id=36]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-36.jpg" type="Texture" id=37]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-37.jpg" type="Texture" id=38]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-38.jpg" type="Texture" id=39]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-39.jpg" type="Texture" id=40]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-40.jpg" type="Texture" id=41]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-41.jpg" type="Texture" id=42]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-42.jpg" type="Texture" id=43]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-43.jpg" type="Texture" id=44]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-44.jpg" type="Texture" id=45]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-45.jpg" type="Texture" id=46]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-46.jpg" type="Texture" id=47]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-47.jpg" type="Texture" id=48]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-48.jpg" type="Texture" id=49]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-49.jpg" type="Texture" id=50]
+[ext_resource path="res://arts/backgrounds/backgroundRealistic-50.jpg" type="Texture" id=51]
+[ext_resource path="res://scripts/scene/HUD.tscn" type="PackedScene" id=52]
+[ext_resource path="res://scripts/creatures/Player.tscn" type="PackedScene" id=53]
+[ext_resource path="res://scripts/utilities/MobTimer.cs" type="Script" id=54]
+[ext_resource path="res://music/House In a Forest Loop.ogg" type="AudioStream" id=55]
+[ext_resource path="res://music/gameover.wav" type="AudioStream" id=56]
+[ext_resource path="res://music/housefly.wav" type="AudioStream" id=57]
+[ext_resource path="res://music/rainforest.wav" type="AudioStream" id=58]
+[ext_resource path="res://music/waterfall.wav" type="AudioStream" id=59]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "background",
+"speed": 15.0
+} ]
+
+[sub_resource type="Curve2D" id=2]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -236.525, 744.79, 0, 0, 0, 0, -225.744, -74.5166, 0, 0, 0, 0, 1763.28, -70.1118, 0, 0, 0, 0, 1767.4, 391.364, 0, 0, 0, 0, 1765.98, 749.195 )
+}
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Background" type="AnimatedSprite" parent="."]
+position = Vector2( 837.737, 451.11 )
+scale = Vector2( 1.44851, 1.87884 )
+frames = SubResource( 1 )
+animation = "background"
+frame = 40
+playing = true
+
+[node name="HUD" parent="." instance=ExtResource( 52 )]
+
+[node name="Player" parent="." instance=ExtResource( 53 )]
+
+[node name="MobTimer" type="Timer" parent="."]
+process_mode = 0
+wait_time = 0.1
+script = ExtResource( 54 )
+
+[node name="ScoreTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="StartPosition" type="Position2D" parent="."]
+position = Vector2( 800, 270 )
+
+[node name="MobPath" type="Path2D" parent="."]
+position = Vector2( 116.143, -2.84353 )
+scale = Vector2( 0.887386, 1.08591 )
+curve = SubResource( 2 )
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
+position = Vector2( -236.525, 744.79 )
+rotation = -1.55763
+
+[node name="BackgroundSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 55 )
+
+[node name="GameOverSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 56 )
+
+[node name="HouseflySound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 57 )
+volume_db = -3.0
+mix_target = 1
+
+[node name="RainforestSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 58 )
+
+[node name="WaterfallSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 59 )
+volume_db = -9.0
+[connection signal="StartGame" from="HUD" to="." method="NewGame"]
+[connection signal="Hit" from="Player" to="." method="GameOver"]
+[connection signal="timeout" from="MobTimer" to="." method="OnMobTimerTimeout"]
+[connection signal="timeout" from="ScoreTimer" to="." method="OnScoreTimerTimeout"]
+[connection signal="timeout" from="StartTimer" to="." method="OnStartTimerTimeout"]
+[connection signal="finished" from="HouseflySound" to="." method="OnHouseflySoundFinished"]
+[connection signal="finished" from="RainforestSound" to="." method="OnRainforestSoundFinished"]
+[connection signal="finished" from="WaterfallSound" to="." method="OnWaterfallSoundFinished"]
