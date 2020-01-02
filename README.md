@@ -1,6 +1,6 @@
-# Dodge the birds game [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/Ukasz09/Dodge-the-birds) [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://choosealicense.com/licenses/mit/) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](https://github.com/Ukasz09/Dodge-the-birds)
+# Dodge the birds game [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://choosealicense.com/licenses/mit/) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](https://github.com/Ukasz09/Dodge-the-birds)
 
-> 2D arcade game, written in C# language using GODOT game engine 🎮 🐦 🐝 
+> 2D arcade game, written in C# language using GODOT game engine 🎮 🐦
 
 The main goal of the game is very simple - survive. Do what you can to not being eaten <br/>
 
