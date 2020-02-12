@@ -7,8 +7,10 @@ The main goal of the game is very simple - survive. Do what you can to not being
 💻 All resolutions support <br/>
 🔉 Sounds and music <br/>
 
+# Gameplay
 <p align="center"><img width=95% src="https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/gameplay.gif"></p>
 
+# Screenshots 
 ![gameplay image](https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/1.jpg)
 ![gameplay image](https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/2.jpg)
 ![gameplay image](https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/3.jpg)
