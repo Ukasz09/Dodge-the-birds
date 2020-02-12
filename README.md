@@ -4,6 +4,9 @@
 
 The main goal of the game is very simple - survive. Do what you can to not being eaten <br/>
 
+💻 All resolutions support <br/>
+🔉 Sounds and music <br/>
+
 <p align="center"><img width=95% src="https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/gameplay.gif"></p>
 
 ![gameplay image](https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/1.jpg)
