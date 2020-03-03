@@ -1,10 +1,11 @@
-# Dodge the birds game [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://choosealicense.com/licenses/mit/) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](https://github.com/Ukasz09/Dodge-the-birds) ![stability-frozen](https://img.shields.io/badge/stability-locked-blue.svg)
+# Dodge the birds game [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](https://choosealicense.com/licenses/mit/) [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)](https://github.com/Ukasz09/Dodge-the-birds) [![stability-frozen](https://img.shields.io/badge/stability-locked-blue.svg)](https://github.com/Ukasz09/TDD-Tic-Tac-Toe)
 
 The main goal of the game is very simple - survive. Do what you can to not being eaten <br/>
 
 💻 All resolutions support <br/>
 🔉 Sounds and music <br/>
 
+___
 # Gameplay
 <p align="center"><img width=95% src="https://raw.githubusercontent.com/Ukasz09/Dodge-the-birds/master/readmeImages/gameplay.gif"></p>
 
